@@ -1,4 +1,4 @@
-# How to contribute with new entities?
+# How to contribute with new entities
 
 ## Development phase
 
