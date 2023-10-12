@@ -1,0 +1,41 @@
+{
+    "name": "SOFC_study",
+    "version": "0.1",
+    "namespace": "http://onto-ns.com/meta",
+    "description": "A SOFC simulation study",
+    "dimensions": [
+        {
+            "name": "nsim",
+            "description": "Number of simulations grouped in the study."
+        },
+    ],
+    "properties": [
+        {
+            "name": "label",
+            "type": "str",
+            "description": "A label to identify the study."
+        },
+        {
+            "name": "generator",
+            "type": "str",
+            "description": "Reference to the file used to generate the study parameters."
+        },
+        {
+            "name": "method",
+            "type": "str",
+            "description": "Method used to generate the parameter sets."
+        },
+        {
+            "name": "date",
+            "type": "str",
+            "description": "time associated with the study."
+        }
+		,
+        {
+            "name": "sim_uuids",
+            "type": "str",
+            "dims": ["nsim"],
+            "description": "List of uuids for the simulations included in the study."
+        }
+    ]
+}

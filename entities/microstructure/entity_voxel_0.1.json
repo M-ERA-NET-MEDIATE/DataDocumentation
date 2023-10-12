@@ -1,0 +1,32 @@
+{
+    "name": "VoxelImage",
+    "version": "0.1",
+    "namespace": "http://onto-ns.com/meta",
+    "description": "A voxel image",
+    "dimensions": [
+        {
+            "name": "nx",
+            "description": "Number of voxel in x direction."
+        },
+        {
+            "name": "ny",
+            "description": "Number of voxel in y direction."
+        },
+        {
+            "name": "nz",
+            "description": "Number of voxel in z direction."
+        },
+        {
+            "name": "nchannels",
+            "description": "Number of channels."
+        },
+    ],
+    "properties": [
+        {
+            "name": "value",
+            "type": "int",
+            "shape": ["nx","ny","nz","nchannel"],
+            "description": "Voxel values."
+        },
+    ]
+}
