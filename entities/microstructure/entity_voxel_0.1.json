@@ -19,7 +19,7 @@
         {
             "name": "nchannels",
             "description": "Number of channels."
-        },
+        }
     ],
     "properties": [
         {
@@ -27,6 +27,6 @@
             "type": "int",
             "shape": ["nx","ny","nz","nchannel"],
             "description": "Voxel values."
-        },
+        }
     ]
 }

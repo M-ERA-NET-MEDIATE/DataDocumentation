@@ -5,15 +5,28 @@ repos:
   # To get an overview of them all as well as the ones used here, please see
   # https://github.com/pre-commit/pre-commit-hooks#hooks-available
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
     - id: end-of-file-fixer
     - id: check-yaml
       name: Check YAML
-    - id: check-toml
-      name: Check TOML
+    - id: check-json
+      name: Check JSON
     - id: trailing-whitespace
       args: [--markdown-linebreak-ext=md]
+
+  # Markdown linter to ensure the quality of the documentation
+  # More information can be found in its source repository:
+  # https://github.com/DavidAnson/markdownlint-cli2
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.10.0
+    hooks:
+    - id: markdownlint-cli2
+      name: markdownlint
+      exclude: ^docs/index.md$
+      args:
+      - --fix
+      - --config=.markdownlint.yaml
 
   # ci-cd is a collection of hooks to prepare for CI/CD workflows
   # It's mainly related to documentation

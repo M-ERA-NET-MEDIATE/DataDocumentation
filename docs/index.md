@@ -11,7 +11,6 @@ It should represent all the input, output for all the functions made available.
 
 The data models are described in JSON files in the entities folder.
 
-
 ### Documentation
 
 How to use the data models.

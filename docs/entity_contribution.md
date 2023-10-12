@@ -12,4 +12,3 @@ When an entity is mature to be called at the minimum version 1.0, it must be mov
 The entity should then be accessed through onto-ns server directly. This is the "official version".
 
 If changes in the entity are required, the procedure to upload a new version should be strictly followed. (link to be added later)
-
