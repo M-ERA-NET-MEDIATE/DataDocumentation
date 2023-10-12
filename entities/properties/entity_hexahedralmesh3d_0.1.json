@@ -1,0 +1,52 @@
+{
+    "name": "HexadralMesh3D",
+    "version": "0.1",
+    "namespace": "http://onto-ns.com/meta",
+    "description": "An hexahedral mesh",
+    "dimensions": [
+        {
+            "name": "nnodes",
+            "description": "Number of nodes."
+        },
+        {
+            "name": "nelements",
+            "description": "Number of elements."
+        },
+        {
+            "name": "nfaces",
+            "description": "Number of faces."
+        },
+        {
+            "name": "mesh_dimensions",
+            "description": "Number of dimensions. Needs to be 3."
+        },
+        {
+            "name": "nhexadron",
+            "description": "Number of nodes in an hexahedron. Needs to be 8."
+        },
+        {
+            "name": "nsquare",
+            "description": "Number of nodes in an square. Needs to be 4."
+        },
+    ],
+    "properties": [
+        {
+            "name": "nodes",
+            "type": "double",
+            "shape": ["nnodes","mesh_dimensions"],
+            "description": "Coordinates of the nodes."
+        },
+        {
+            "name": "elements",
+            "type": "int",
+            "shape": ["nelements","nhexahedron"],
+            "description": "Ordered list of ID of the nodes forming the hexahedron."
+        },
+        {
+            "name": "faces",
+            "type": "int",
+            "shape": ["nfaces","nsquare"],
+            "description": "Ordered list of ID of the nodes forming the square face."
+        },
+    ]
+}
