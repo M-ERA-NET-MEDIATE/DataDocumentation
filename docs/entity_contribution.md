@@ -9,6 +9,7 @@ Version 0.x are excluded.
 
 When an entity is mature to be called at the minimum version 1.0, it must be moved into this repo and removed in the development folder.
 
-The entity should then be accessed through onto-ns server directly. This is the "official version".
+The entity should then be accessed through onto-ns server directly.
+This is the "official version".
 
 If changes in the entity are required, the procedure to upload a new version should be strictly followed. (link to be added later)
