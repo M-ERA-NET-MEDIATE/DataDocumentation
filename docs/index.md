@@ -20,7 +20,7 @@ How the deployment to onto-ns server system works
 
 ## License
 
-This code is licensed under the [CC0 license](LICENSE).
+This code is licensed under the [CC0 license](LICENSE.md).
 
 ## Acknowledgments
 

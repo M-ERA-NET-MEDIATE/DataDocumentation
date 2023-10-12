@@ -1,0 +1,28 @@
+# To install the git pre-commit hook run:
+#   pre-commit install
+repos:
+  # pre-commit-hooks supplies a multitude of small hooks
+  # To get an overview of them all as well as the ones used here, please see
+  # https://github.com/pre-commit/pre-commit-hooks#hooks-available
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: end-of-file-fixer
+    - id: check-yaml
+      name: Check YAML
+    - id: check-toml
+      name: Check TOML
+    - id: trailing-whitespace
+      args: [--markdown-linebreak-ext=md]
+
+  # ci-cd is a collection of hooks to prepare for CI/CD workflows
+  # It's mainly related to documentation
+  # More information can be found in its documentation:
+  # https://SINTEF.github.io/ci-cd/
+  - repo: https://github.com/SINTEF/ci-cd
+    rev: v2.5.2
+    hooks:
+    - id: docs-landing-page
+      args:
+      - --docs-folder=docs
+      - --replacement=(LICENSE),(LICENSE.md)
