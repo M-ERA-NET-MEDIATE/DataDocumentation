@@ -1,18 +1,17 @@
 {
-    "name": "VoxelImage",
+    "name": "VoxelImageBW",
     "version": "0.1",
     "namespace": "http://onto-ns.com/meta",
-    "description": "A voxel image",
+    "description": "A binary voxel image",
     "dimensions": {
         "nx": "Number of voxel in x direction.",
         "ny": "Number of voxel in y direction.",
         "nz": "Number of voxel in z direction.",
-        "nchannels": "Number of channels.",
     },
     "properties": {
         "value": {
             "type": "int",
-            "shape": ["nx","ny","nz","nchannels"],
+            "shape": ["nx","ny","nz"],
             "description": "Binary Voxel values."
         },
     }
