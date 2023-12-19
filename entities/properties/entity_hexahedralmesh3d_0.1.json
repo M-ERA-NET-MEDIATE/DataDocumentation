@@ -27,7 +27,7 @@
         {
             "name": "nsquare",
             "description": "Number of nodes in an square. Needs to be 4."
-        },
+        }
     ],
     "properties": [
         {
@@ -47,6 +47,6 @@
             "type": "int",
             "shape": ["nfaces","nsquare"],
             "description": "Ordered list of ID of the nodes forming the square face."
-        },
+        }
     ]
 }

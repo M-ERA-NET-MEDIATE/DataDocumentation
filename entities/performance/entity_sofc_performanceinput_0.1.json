@@ -3,8 +3,7 @@
     "version": "0.1",
     "namespace": "http://onto-ns.com/meta",
     "description": "A SOFC simulation",
-    "dimensions": [
-    ],
+    "dimensions": [],
     "properties": [
         {
             "name": "Case",
@@ -16,134 +15,115 @@
             "type": "double",
             "unit": "m",
             "description": "L_channel[m]."
-        }
-		,
+        },
         {
             "name": "H_channel",
             "type": "double",
             "unit": "m",
             "description": "H_channel[m]."
-        }
-		,
+        },
         {
             "name": "W_channel",
             "type": "double",
             "unit": "m",
             "description": "W_channel[m]."
-        }
-		,
+        },
         {
             "name": "W_rib",
             "type": "double",
             "unit": "m",
             "description": "W_rib[m]."
-        }
-		,
+        },
         {
             "name": "H_Electrolyte",
             "type": "double",
             "unit": "m",
             "description": "H_Electrolyte[m]."
-        }
-		,
+        },
         {
             "name": "H_GDE",
             "type": "double",
             "unit": "m",
             "description": "H_GDE[m]."
-        }
-		,
+        },
         {
             "name": "Por_cathode",
             "type": "double",
             "unit": "",
             "description": "Por_cathode[1]."
-        }
-		,
+        },
         {
             "name": "Tor_cathode",
             "type": "double",
             "unit": "",
             "description": "Tor_cathode[1]."
-        }
-		,
+        },
         {
             "name": "Per_cathode",
             "type": "double",
             "unit": "um2",
             "description": "Per_cathode[um^2]."
-        }
-		,
+        },
         {
             "name": "Spa_cathode",
             "type": "double",
             "unit": "nm-1",
             "description": "Spa_cathode[1/nm]."
-        }
-		,
+        },
         {
             "name": "Por_anode",
             "type": "double",
             "unit": "",
             "description": "Por_anode[1]."
-        }
-		,
+        },
         {
             "name": "Tor_anode",
             "type": "double",
             "unit": "",
             "description": "Tor_anode[1]."
-        }
-		,
+        },
         {
             "name": "Per_anode",
             "type": "double",
             "unit": "um2",
             "description": "Per_anode[um^2]."
-        }
-		,
+        },
         {
             "name": "Spa_anode",
             "type": "double",
             "unit": "nm-1",
             "description": "Spa_anode[1/nm]."
-        }
-		,
+        },
         {
             "name": "Sigma_cathode",
             "type": "double",
             "unit": "S m-1",
             "description": "Sigma_cathode[S/m]."
-        }
-		,
+        },
         {
             "name": "Thc_cathode",
             "type": "double",
             "unit": "J s-1 m K",
             "description": "Thc_cathode[J/smK]."
-        }
-		,
+        },
         {
             "name": "Prd_cathode",
             "type": "double",
             "unit": "Pa",
             "description": "Prd_cathode[Pa]."
-        }
-		,
+        },
         {
             "name": "Sigma_anode",
             "type": "double",
             "unit": "S m-1",
             "description": "Sigma_anode[S/m]."
-        }
-		,
+        },
         {
             "name": "Thc_anode",
             "type": "double",
             "unit": "J s-1 m K",
             "description": "Thc_anode[J/smK]."
-        }
-		,
+        },
         {
             "name": "Prd_anode",
             "type": "double",
@@ -155,8 +135,7 @@
             "type": "double",
             "unit": "atm",
             "description": "Prs_GDE[atm]."
-        }
-		,
+        },
         {
             "name": "Tmp_GDE",
             "type": "double",
