@@ -23,4 +23,4 @@ This code is licensed under the [CC0 license](LICENSE).
 
 ## Acknowledgments
 
-M-ERANET MEDIATE
+M-ERA.NET MEDIATE
