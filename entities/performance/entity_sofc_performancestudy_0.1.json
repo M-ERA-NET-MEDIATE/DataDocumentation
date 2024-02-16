@@ -7,7 +7,7 @@
         {
             "name": "nsim",
             "description": "Number of simulations grouped in the study."
-        },
+        }
     ],
     "properties": [
         {
@@ -29,8 +29,7 @@
             "name": "date",
             "type": "str",
             "description": "time associated with the study."
-        }
-		,
+        },
         {
             "name": "sim_uuids",
             "type": "str",

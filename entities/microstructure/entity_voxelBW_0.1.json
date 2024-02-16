@@ -6,13 +6,13 @@
     "dimensions": {
         "nx": "Number of voxel in x direction.",
         "ny": "Number of voxel in y direction.",
-        "nz": "Number of voxel in z direction.",
+        "nz": "Number of voxel in z direction."
     },
     "properties": {
         "value": {
             "type": "int",
             "shape": ["nx","ny","nz"],
             "description": "Binary Voxel values."
-        },
+        }
     }
 }
