@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-03-26T10:26:22.444Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="PCCqReHF12cXAg9hzDlX" version="24.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-26T10:39:19.796Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="QjPSKunJZBN50y10mWvi" version="24.0.2" type="github" pages="2">
   <diagram name="microstructure_homogenization" id="2a216829-ef6e-dabb-86c1-c78162f3ba2b">
     <mxGraphModel dx="2360" dy="1533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Ow_sgtAgn3BazwAQavvg-2" value="LIST" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="70" y="120" width="840" height="290" as="geometry" />
+          <mxGeometry x="5" y="110" width="840" height="290" as="geometry" />
         </mxCell>
         <mxCell id="Ow_sgtAgn3BazwAQavvg-6" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="Ow_sgtAgn3BazwAQavvg-2">
           <mxGeometry x="770" y="100" width="50" height="50" as="geometry" />
@@ -14,10 +14,10 @@
           <mxGeometry x="70" y="100" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Ow_sgtAgn3BazwAQavvg-3" value="TUD" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="70" y="410" width="840" height="220" as="geometry" />
+          <mxGeometry x="5" y="400" width="840" height="220" as="geometry" />
         </mxCell>
         <mxCell id="Ow_sgtAgn3BazwAQavvg-4" value="SINTEF" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="70" y="630" width="840" height="260" as="geometry" />
+          <mxGeometry x="5" y="620" width="840" height="260" as="geometry" />
         </mxCell>
         <mxCell id="Ow_sgtAgn3BazwAQavvg-5" value="Documentation and storage" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=service;" vertex="1" parent="Ow_sgtAgn3BazwAQavvg-4">
           <mxGeometry x="150" y="60" width="120" height="80" as="geometry" />
@@ -33,7 +33,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Ow_sgtAgn3BazwAQavvg-8" value="&lt;h1&gt;Microstructure homogenization workflow&lt;br&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="245" y="40" width="490" height="60" as="geometry" />
+          <mxGeometry x="180" y="40" width="490" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -43,7 +43,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="40vpw8KIt3N2z_lgxEn6-1" value="LIST" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="40vpw8KIt3N2z_lgxEn6-1" value="LIST" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="70" y="100" width="1040" height="310" as="geometry" />
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-2" value="End" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="40vpw8KIt3N2z_lgxEn6-1">
@@ -58,7 +58,7 @@
           <mxGeometry x="70" y="143" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-10" value="COMSOL simulations" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;isLoopStandard=1;fontSize=15;" vertex="1" parent="40vpw8KIt3N2z_lgxEn6-1">
-          <mxGeometry x="380" y="128" width="120" height="80" as="geometry" />
+          <mxGeometry x="410" y="128" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-11" value="List of simulation parameters" style="shape=mxgraph.bpmn.data;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;size=15;html=1;bpmnTransferType=input;isCollection=1;" vertex="1" parent="40vpw8KIt3N2z_lgxEn6-1">
           <mxGeometry x="320" y="30" width="40" height="60" as="geometry" />
@@ -133,7 +133,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="40vpw8KIt3N2z_lgxEn6-5" value="SINTEF" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="40vpw8KIt3N2z_lgxEn6-5" value="SINTEF" style="swimlane;html=1;startSize=50;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="70" y="410" width="1040" height="260" as="geometry" />
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-6" value="Documentation and storage" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=service;fontSize=15;" vertex="1" parent="40vpw8KIt3N2z_lgxEn6-5">
@@ -152,7 +152,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-9" value="&lt;h1&gt;SOFC performance workflow&lt;br&gt;&lt;/h1&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="245" y="40" width="490" height="60" as="geometry" />
+          <mxGeometry x="390" y="10" width="490" height="60" as="geometry" />
         </mxCell>
         <mxCell id="40vpw8KIt3N2z_lgxEn6-26" value="" style="dashed=1;dashPattern=8 4;endArrow=blockThin;endFill=1;startArrow=oval;startFill=0;endSize=6;startSize=4;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="40vpw8KIt3N2z_lgxEn6-36" target="40vpw8KIt3N2z_lgxEn6-6">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -160,7 +160,7 @@
             <mxPoint x="490" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="40vpw8KIt3N2z_lgxEn6-28" value="" style="dashed=1;dashPattern=8 4;endArrow=blockThin;endFill=1;startArrow=oval;startFill=0;endSize=6;startSize=4;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="40vpw8KIt3N2z_lgxEn6-10" target="40vpw8KIt3N2z_lgxEn6-6">
+        <mxCell id="40vpw8KIt3N2z_lgxEn6-28" value="" style="dashed=1;dashPattern=8 4;endArrow=blockThin;endFill=1;startArrow=oval;startFill=0;endSize=6;startSize=4;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="40vpw8KIt3N2z_lgxEn6-10" target="40vpw8KIt3N2z_lgxEn6-6">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="560" y="295" as="sourcePoint" />
             <mxPoint x="314" y="700" as="targetPoint" />
