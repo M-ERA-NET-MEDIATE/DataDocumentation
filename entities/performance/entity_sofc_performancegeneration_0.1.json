@@ -1,0 +1,411 @@
+{
+    "name": "SOFC_parameter_generation",
+    "version": "0.1",
+    "namespace": "http://onto-ns.com/meta",
+    "description": "A SOFC simulation",
+    "dimensions": [],
+    "properties": [
+        {
+            "name": "nsnaps",
+            "type": "int",
+            "unit": "",
+            "description": "Number of snaps to be generated."
+        },
+        {
+            "name": "L_channel_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "L_channel[m] reference value."
+        },
+        {
+            "name": "L_channel_min",
+            "type": "double",
+            "unit": "m",
+            "description": "L_channel[m] minimum value."
+        },
+        {
+            "name": "L_channel_max",
+            "type": "double",
+            "unit": "m",
+            "description": "L_channel[m] maximum value."
+        },
+        {
+            "name": "H_channel_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "H_channel[m] reference value."
+        },
+        {
+            "name": "H_channel_min",
+            "type": "double",
+            "unit": "m",
+            "description": "H_channel[m] minimum value."
+        },
+        {
+            "name": "H_channel_max",
+            "type": "double",
+            "unit": "m",
+            "description": "H_channel[m] maximum value."
+        },
+        {
+            "name": "W_channel_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "W_channel[m] reference value."
+        },
+        {
+            "name": "W_channel_min",
+            "type": "double",
+            "unit": "m",
+            "description": "W_channel[m] minimum value."
+        },
+        {
+            "name": "W_channel_max",
+            "type": "double",
+            "unit": "m",
+            "description": "W_channel[m] maximum value."
+        },
+        {
+            "name": "W_rib_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "W_rib[m] reference value."
+        },
+        {
+            "name": "W_rib_min",
+            "type": "double",
+            "unit": "m",
+            "description": "W_rib[m] minimum value."
+        },
+        {
+            "name": "W_rib_max",
+            "type": "double",
+            "unit": "m",
+            "description": "W_rib[m] maximum value."
+        },
+        {
+            "name": "H_Electrolyte_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "H_Electrolyte[m] reference value."
+        },
+        {
+            "name": "H_Electrolyte_min",
+            "type": "double",
+            "unit": "m",
+            "description": "H_Electrolyte[m] minimum value."
+        },
+        {
+            "name": "H_Electrolyte_max",
+            "type": "double",
+            "unit": "m",
+            "description": "H_Electrolyte[m] maximum value."
+        },
+        {
+            "name": "H_GDE_ref",
+            "type": "double",
+            "unit": "m",
+            "description": "H_GDE[m] reference value."
+        },
+        {
+            "name": "H_GDE_min",
+            "type": "double",
+            "unit": "m",
+            "description": "H_GDE[m] minimum value."
+        },
+        {
+            "name": "H_GDE_max",
+            "type": "double",
+            "unit": "m",
+            "description": "H_GDE[m] maximum value."
+        },
+        {
+            "name": "Por_cathode_ref",
+            "type": "double",
+            "unit": "",
+            "description": "Por_cathode[1] reference value."
+        },
+        {
+            "name": "Por_cathode_min",
+            "type": "double",
+            "unit": "",
+            "description": "Por_cathode[1] minimum value."
+        },
+        {
+            "name": "Por_cathode_max",
+            "type": "double",
+            "unit": "",
+            "description": "Por_cathode[1] maximum value."
+        },
+        {
+            "name": "Tor_cathode_ref",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_cathode[1] reference value."
+        },
+        {
+            "name": "Tor_cathode_min",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_cathode[1] minimum value."
+        },
+        {
+            "name": "Tor_cathode_max",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_cathode[1] maximum value."
+        },
+        {
+            "name": "Per_cathode_ref",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_cathode[um^2] reference value."
+        },
+        {
+            "name": "Per_cathode_min",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_cathode[um^2] minimum value."
+        },
+        {
+            "name": "Per_cathode_max",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_cathode[um^2] maximum value."
+        },
+        {
+            "name": "Spa_cathode_ref",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_cathode[1/nm] reference value."
+        },
+        {
+            "name": "Spa_cathode_min",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_cathode[1/nm] minimum value."
+        },
+        {
+            "name": "Spa_cathode_max",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_cathode[1/nm] maximum value."
+        },
+        {
+            "name": "Por_anode_ref",
+            "type": "double",
+            "unit": "",
+            "description": "Por_anode[1] reference value."
+        },
+        {
+            "name": "Por_anode_min",
+            "type": "double",
+            "unit": "",
+            "description": "Por_anode[1] minimum value."
+        },
+        {
+            "name": "Por_anode_max",
+            "type": "double",
+            "unit": "",
+            "description": "Por_anode[1] maximum value."
+        },
+        {
+            "name": "Tor_anode_ref",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_anode[1] reference value."
+        },
+        {
+            "name": "Tor_anode_min",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_anode[1] minimum value."
+        },
+        {
+            "name": "Tor_anode_max",
+            "type": "double",
+            "unit": "",
+            "description": "Tor_anode[1] maximum value."
+        },
+        {
+            "name": "Per_anode_ref",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_anode[um^2] reference value."
+        },
+        {
+            "name": "Per_anode_min",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_anode[um^2] minimum value."
+        },
+        {
+            "name": "Per_anode_max",
+            "type": "double",
+            "unit": "um2",
+            "description": "Per_anode[um^2] maximum value."
+        },
+        {
+            "name": "Spa_anode_ref",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_anode[1/nm] reference value."
+        },
+        {
+            "name": "Spa_anode_min",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_anode[1/nm] minimum value."
+        },
+        {
+            "name": "Spa_anode_max",
+            "type": "double",
+            "unit": "nm-1",
+            "description": "Spa_anode[1/nm] maximum value."
+        },
+        {
+            "name": "Sigma_cathode_ref",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_cathode[S/m] reference value."
+        },
+        {
+            "name": "Sigma_cathode_min",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_cathode[S/m] minimum value."
+        },
+        {
+            "name": "Sigma_cathode_max",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_cathode[S/m] maximum value."
+        },
+        {
+            "name": "Thc_cathode_ref",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_cathode[J/smK] reference value."
+        },
+        {
+            "name": "Thc_cathode_min",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_cathode[J/smK] minimum value."
+        },
+        {
+            "name": "Thc_cathode_max",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_cathode[J/smK] maximum value."
+        },
+        {
+            "name": "Prd_cathode_ref",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_cathode[Pa] reference value."
+        },
+        {
+            "name": "Prd_cathode_min",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_cathode[Pa] minimum value."
+        },
+        {
+            "name": "Prd_cathode_max",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_cathode[Pa] maximum value."
+        },
+        {
+            "name": "Sigma_anode_ref",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_anode[S/m] reference value."
+        },
+        {
+            "name": "Sigma_anode_min",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_anode[S/m] minimum value."
+        },
+        {
+            "name": "Sigma_anode_max",
+            "type": "double",
+            "unit": "S m-1",
+            "description": "Sigma_anode[S/m] maximum value."
+        },
+        {
+            "name": "Thc_anode_ref",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_anode[J/smK] reference value."
+        },
+        {
+            "name": "Thc_anode_min",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_anode[J/smK] minimum value."
+        },
+        {
+            "name": "Thc_anode_max",
+            "type": "double",
+            "unit": "J s-1 m K",
+            "description": "Thc_anode[J/smK] maximum value."
+        },
+        {
+            "name": "Prd_anode_ref",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_anode[Pa] reference value."
+        },
+        {
+            "name": "Prd_anode_min",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_anode[Pa] minimum value."
+        },
+        {
+            "name": "Prd_anode_max",
+            "type": "double",
+            "unit": "Pa",
+            "description": "Prd_anode[Pa] maximum value."
+        },
+        {
+            "name": "Prs_GDE_ref",
+            "type": "double",
+            "unit": "atm",
+            "description": "Prs_GDE[atm] reference value."
+        },
+        {
+            "name": "Prs_GDE_min",
+            "type": "double",
+            "unit": "atm",
+            "description": "Prs_GDE[atm] minimum value."
+        },
+        {
+            "name": "Prs_GDE_max",
+            "type": "double",
+            "unit": "atm",
+            "description": "Prs_GDE[atm] maximum value."
+        },
+        {
+            "name": "Tmp_GDE_ref",
+            "type": "double",
+            "unit": "K",
+            "description": "Tmp_GDE[K] reference value."
+        },
+        {
+            "name": "Tmp_GDE_min",
+            "type": "double",
+            "unit": "K",
+            "description": "Tmp_GDE[K] minimum value."
+        },
+        {
+            "name": "Tmp_GDE_max",
+            "type": "double",
+            "unit": "K",
+            "description": "Tmp_GDE[K] maximum value."
+        }
+    ]
+}
