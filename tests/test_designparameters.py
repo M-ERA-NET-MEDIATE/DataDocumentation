@@ -10,6 +10,8 @@ from sofc_functions.designparameters import (
     get_design_parameters,
     create_snaps,
     get_generated_parameters,
+    get_dataframe_generated_parameters,
+    write_output_csv,
 )
 
 root = Path(__file__).resolve().parent.parent
@@ -86,7 +88,6 @@ def default_get_design_parameters():
     """
     filepath = folder_input / "example_designparameters.json"
 
-    #dlite.storage_path.append(f'{filepath}')
     inst_genparams = dlite.Instance.from_url(f'json://{filepath}')
 
     return inst_genparams
@@ -132,6 +133,27 @@ def test_get_generated_parameters():
         json.dump(dict0,f,indent=4)
 
 
+def test_get_dataframe_generated_parameters():
+    """
+    """
+    filepath = folder_input / "example_generatedparameters.json"
+
+    params = dlite.Instance.from_url(f'json://{filepath}')
+
+    get_dataframe_generated_parameters(params)
+
+
+def test_write_output_csv():
+    """
+    """
+    filepath = folder_input / "example_generatedparameters.json"
+
+    params = dlite.Instance.from_url(f'json://{filepath}')
+
+    fileout = folder_output / "test_write_csv_parameters.csv"
+
+    write_output_csv(generatedParameters=params,fileout=fileout)
+
 
 if __name__ == "__main__":
 
@@ -140,3 +162,7 @@ if __name__ == "__main__":
     #test_get_design_parameters()
 
     test_get_generated_parameters()
+
+    test_get_dataframe_generated_parameters()
+
+    test_write_output_csv()

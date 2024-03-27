@@ -104,6 +104,24 @@ def get_dataframe_generated_parameters(params:Instance):
     """
     df = pd.DataFrame()
 
+    # convert the instance to a dictionnary
+    params_dict = params.asdict()
+    meta_dict = params.meta.asdict()
+
+    #print(params_dict)
+
+    # add the case column
+    df["% case"] = range(1,params.nsnaps+1)
+
+    for key in params_dict["properties"]:
+        if key not in ["label","generator","method","date"]:
+            if "unit" in meta_dict["properties"][key]:
+                unit = meta_dict["properties"][key]["unit"]
+            else:
+                unit ="-"
+            label = key + "[" + unit + "]"
+            df[label] = params_dict["properties"][key]
+
     return df
 
     
@@ -115,13 +133,13 @@ def write_output_csv(generatedParameters:Instance,fileout:Path):
     df = get_dataframe_generated_parameters(generatedParameters)
 
     with open(fileout,'w') as f:
-        f.write('% Generated from '+generatedParameters.generator+
-                ', using '+generatedParameters.method+' at, ' + 
+        f.write('% Generated from:'+generatedParameters.generator+
+                ', using '+generatedParameters.method+', at ' + 
                 generatedParameters.date + '\n')
-        f.write(f'% Number of parameters,{generatedParameters.nparam}\n')
-        f.write(f'% Number of cases,{generatedParameters.nsnaps}')
+        f.write(f'% Number of parameters:{generatedParameters.nparam}\n')
+        f.write(f'% Number of cases:{generatedParameters.nsnaps}\n')
         
-    df.to_csv(fileout,sep=";",mode="a")
+    df.to_csv(fileout,sep=",",mode="a",index=False)
 
     return
 
