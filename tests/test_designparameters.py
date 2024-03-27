@@ -6,6 +6,12 @@ import os
 import dlite
 import json
 
+from sofc_functions.designparameters import (
+    get_design_parameters,
+    create_snaps,
+    get_generated_parameters,
+)
+
 root = Path(__file__).resolve().parent.parent
 folder_entities = root / "entities"
 folder = Path(__file__).resolve().parent
@@ -74,6 +80,63 @@ def test_create_input():
         json.dump(dict0,f,indent=4)
 
 
+def default_get_design_parameters():
+    """
+    default design parameters
+    """
+    filepath = folder_input / "example_designparameters.json"
+
+    #dlite.storage_path.append(f'{filepath}')
+    inst_genparams = dlite.Instance.from_url(f'json://{filepath}')
+
+    return inst_genparams
+
+def test_get_design_parameters():
+    """
+    test the conversion function
+    """
+    inst_genparams = default_get_design_parameters()
+
+    nsnaps, params = get_design_parameters(inst_genparams)
+
+    print(nsnaps,params)
+
+
+def default_get_study_parameters(inst_genparams):
+    """
+    default values for the study parameters
+    """
+    nsnaps, params = get_design_parameters(inst_genparams)
+
+    # create the values
+    array_params = create_snaps(NB_Snaps=nsnaps, params=params)
+    return array_params
+
+def test_get_generated_parameters():
+    """
+    test getting the output entity
+    """
+    inst_genparams = default_get_design_parameters()
+
+    array_params = default_get_study_parameters(inst_genparams)
+
+    generated_parameters = get_generated_parameters(inputParameters=inst_genparams,
+                                                    array_params=array_params,
+                                                    label="test_study_00")
+
+    filepath = folder_output / "test_create_generatedparameters.json"
+    dict0 = generated_parameters.asdict()
+    dict0["uri"] = dict0.pop("uuid")
+    
+    with open(file=filepath,mode="w") as f:
+        json.dump(dict0,f,indent=4)
+
+
+
 if __name__ == "__main__":
 
-    test_create_input()
+    #test_create_input()
+
+    #test_get_design_parameters()
+
+    test_get_generated_parameters()

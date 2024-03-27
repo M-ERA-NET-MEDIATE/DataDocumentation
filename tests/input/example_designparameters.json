@@ -2,7 +2,7 @@
     "meta": "http://onto-ns.com/meta/0.1/SOFC_parameter_generation",
     "dimensions": {},
     "properties": {
-        "nsnaps": 512,
+        "nsnaps": 20,
         "L_channel_ref": 0.01,
         "L_channel_min": 0.005,
         "L_channel_max": 0.015,
