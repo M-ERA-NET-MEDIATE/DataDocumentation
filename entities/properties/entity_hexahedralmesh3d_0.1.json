@@ -13,6 +13,10 @@
             "description": "Number of elements."
         },
         {
+            "name": "nmaterials",
+            "description": "Number of materials."
+        },
+        {
             "name": "nfaces",
             "description": "Number of faces."
         },
@@ -41,6 +45,18 @@
             "type": "int",
             "shape": ["nelements","nhexahedron"],
             "description": "Ordered list of ID of the nodes forming the hexahedron."
+        },
+        {
+            "name": "material",
+            "type": "int",
+            "shape": ["nelements"],
+            "description": "ID of the material present in each elements. Needs to be between 1 and nmaterials"
+        },
+        {
+            "name": "materialName",
+            "type": "str",
+            "shape": ["nmaterials"],
+            "description": "Ordered list of material names."
         },
         {
             "name": "faces",

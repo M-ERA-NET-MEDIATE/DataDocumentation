@@ -73,7 +73,7 @@ def get_generated_parameters(inputParameters:Instance,array_params,label:str):
     return generatedParameters
 
 
-def wrapper_in_design_parameters(inputParameters:Instance,label:str):
+def wrapper_design_parameters(inputParameters:Instance,label:str):
     """
     Function to create the design parameters and return them as DLite Instance
 
