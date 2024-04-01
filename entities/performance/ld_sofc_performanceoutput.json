@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/emmo-repo/domain-battery/master/context.json",
+        {
+            "V_pol": "http:emmo.info/domain-sofc/0.1/sofc#CellPolarization",
+            "I_Cell": "http:emmo.info/domain-sofc/0.1/sofc#CurrentDensity",
+            "V_cell": "http:emmo.info/domain-sofc/0.1/sofc#Vcell",
+            "P_cell": "http:emmo.info/domain-sofc/0.1/sofc#CellElectricalPowerDensity"
+        },
+        {"@language": "en"}
+    ],
+    "dc:title": "SOFC simulation results",
+    "dcat:keyword": ["SOFC", "performance"],
+    "tableSchema": {
+      "columns": [
+        {
+        "name": "Case",
+        "titles": "CaseID",
+        "dc:description": "An identifier for the case.",
+        "datatype": "int",
+        "required": true
+      }, 
+      {
+        "name": "V_pol",
+        "titles": "V_pol",
+        "dc:description": "Cell polarization[V].",
+        "datatype": "double",
+        "required": true,
+        "propertyUrl": {
+            "@type": "CellPolarization"
+        },
+        "hasMeasurementUnit": {
+            "@type": "Volt"
+        }
+      },
+      {
+        "name": "I_cell",
+        "titles": "I_cell",
+        "dc:description": "Average Cell current density[A/m2].",
+        "datatype": "double",
+        "required": true,
+        "propertyUrl": {
+            "@type": "CurrentDensity"
+        },
+        "hasMeasurementUnit": {
+            "@type": "AmperePerSquareMetre"
+        }
+      },
+      {
+        "name": "V_cell",
+        "titles": "V_cell",
+        "dc:description": "Cell voltage[V].",
+        "datatype": "double",
+        "required": true,
+        "propertyUrl": {
+            "@type": "Vcell"
+        },
+        "hasMeasurementUnit": {
+            "@type": "Volt"
+        }
+      },
+      {
+        "name": "P_cell",
+        "titles": "P_cell",
+        "dc:description": "Average Cell power[W/m2].",
+        "datatype": "double",
+        "required": true,
+        "propertyUrl": {
+            "@type": "CellElectricalPowerDensity"
+        },
+        "hasMeasurementUnit": {
+            "@type": "WattPerSquareMetre"
+        }
+      }
+    ]
+    }
+  }
