@@ -1,5 +1,5 @@
 {
-    "name": "HexadralMesh3D",
+    "name": "HexahedralMesh3D",
     "version": "0.1",
     "namespace": "http://onto-ns.com/meta",
     "description": "An hexahedral mesh",

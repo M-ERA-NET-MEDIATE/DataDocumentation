@@ -1,0 +1,4 @@
+<http://onto-ns.com/meta/0.1/SOFC_result_table#V_pol> <http://emmo.info/domain-mappings#mapsTo> <http:emmo.info/domain-sofc/0.1/sofc#CellPolarization> .
+<http://onto-ns.com/meta/0.1/SOFC_result_table#I_Cell> <http://emmo.info/domain-mappings#mapsTo> <http:emmo.info/domain-sofc/0.1/sofc#CurrentDensity> .
+<http://onto-ns.com/meta/0.1/SOFC_result_table#V_cell> <http://emmo.info/domain-mappings#mapsTo> <http:emmo.info/domain-sofc/0.1/sofc#Vcell> .
+<http://onto-ns.com/meta/0.1/SOFC_result_table#P_cell> <http://emmo.info/domain-mappings#mapsTo> <http:emmo.info/domain-sofc/0.1/sofc#CellElectricalPowerDensity> .

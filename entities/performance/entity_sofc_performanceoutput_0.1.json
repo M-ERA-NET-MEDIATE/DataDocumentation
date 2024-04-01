@@ -1,0 +1,47 @@
+{
+    "name": "SOFC_result_table",
+    "version": "0.1",
+    "namespace": "http://onto-ns.com/meta",
+    "description": "A SOFC simulation result table",
+    "dimensions": [
+        {
+            "name": "nrows",
+            "description": "Number of rows in the table."
+        }
+    ],
+    "properties": [
+        {
+            "name": "Case",
+            "type": "int",
+            "description": "An identifier for the case."
+        },
+        {
+            "name": "V_pol",
+            "type": "double",
+            "unit": "V",
+            "dims": ["nrows"],
+            "description": "Cell polarization[V]."
+        },
+        {
+            "name": "I_cell",
+            "type": "double",
+            "unit": "A m-2",
+            "dims": ["nrows"],
+            "description": "Average Cell current density[A/m2]."
+        },
+        {
+            "name": "V_cell",
+            "type": "double",
+            "unit": "V",
+            "dims": ["nrows"],
+            "description": "Cell voltage[V]."
+        },
+        {
+            "name": "P_cell",
+            "type": "double",
+            "unit": "W m-2",
+            "dims": ["nrows"],
+            "description": "Average Cell power[W/m2]."
+        }
+    ]
+}
