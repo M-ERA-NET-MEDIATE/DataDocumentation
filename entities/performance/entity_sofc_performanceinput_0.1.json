@@ -1,7 +1,7 @@
 {
     "name": "SOFC_simulation",
     "version": "0.1",
-    "namespace": "http://onto-ns.com/meta",
+    "namespace": "http://onto-ns.com/meta/mediate",
     "description": "A SOFC simulation",
     "dimensions": [],
     "properties": [
