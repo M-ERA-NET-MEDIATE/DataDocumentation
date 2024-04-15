@@ -24,7 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -U setuptools wheel
-          pip install -r .github/requirements_cicd.txt
+          pip install -r requirements_upload.txt
 
       - name: Check 'entities-service' CLI version
         run: entities-service --version
