@@ -1,0 +1,1 @@
+entities-service @ git+https://github.com/SINTEF/entities-service.git

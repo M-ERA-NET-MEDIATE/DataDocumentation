@@ -1,7 +1,7 @@
 {
     "name": "SOFC_study",
     "version": "0.1",
-    "namespace": "http://onto-ns.com/meta",
+    "namespace": "http://onto-ns.com/meta/MEDIATE",
     "description": "A SOFC simulation study",
     "dimensions": [
         {

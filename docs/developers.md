@@ -28,9 +28,11 @@ As part of the development environment, we use various tools or tooling:
 
 ## Setup development environment
 
+At least Python 3.10 is required.
+
 To set up the development environment, first clone the repository into a local directory, enter it and then install the dependencies in the `requirements.txt` file.
 
-```bash
+```shell
 git clone https://github.com/M-ERA-NET-MEDIATE/DataDocumentation.git
 cd DataDocumentation
 pip install -r requirements.txt
@@ -43,6 +45,14 @@ pip install -r requirements.txt
 
 Run `pre-commit install` to ensure all hooks are run before each commit.
 
+### Entity upload functionality
+
+If you want to use the entity upload functionality, you need to furthermore install the dependencies in the `requirements_upload.txt` file:
+
+```shell
+pip install -r requirements_upload.txt
+```
+
 ### Run `pre-commit` hooks
 
-To run the hooks on all files, run `pre-commit run --all-files`.
+To run the hooks on all files, run `pre-commit run --all-files` or `pre-commit run -a`.
