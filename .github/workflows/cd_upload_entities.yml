@@ -1,0 +1,43 @@
+name: CD - Upload Entities
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  update-public-entities:
+    name: Update public entities
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'M-ERA-NET-MEDIATE'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U setuptools wheel
+          pip install -r .github/requirements_cicd.txt
+
+      - name: Check 'entities-service' CLI version
+        run: entities-service --version
+
+      # This step should be dynamically generated based on the recently changed/added Entities
+      # Maybe consider a pre-commit hook or something?
+      - name: Validate Entities
+        run: entities-service validate --format=json -d entities/microstructure -d entities/performance -d entities/properties
+
+      # This step requires a `--no-summary` option for the `entities-service upload` command
+      # This step should be dynamically generated based on the recently changed/added Entities
+      - name: Upload Entities
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: entities-service upload --no-summary --format=json -d entities/microstructure -d entities/performance -d entities/properties
+        env:
+          ENTITIES_SERVICE_ACCESS_TOKEN: ${{ secrets.ENTITIES_SERVICE_ACCESS_TOKEN }}
