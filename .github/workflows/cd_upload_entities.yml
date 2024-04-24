@@ -29,15 +29,24 @@ jobs:
       - name: Check 'entities-service' CLI version
         run: entities-service --version
 
-      # This step should be dynamically generated based on the recently changed/added Entities
-      # Maybe consider a pre-commit hook or something?
-      - name: Validate Entities
-        run: entities-service validate --format=json -d entities/microstructure -d entities/performance -d entities/properties
+      - name: Gather Entities
+        run: |
+          if [ "${{ github.event_name }}" == "push" ]; then
+            SHA_BEFORE="${{ github.event.before }}"
+          else
+            SHA_BEFORE="${{ github.event.pull_request.base.sha }}"
+          fi
 
-      # This step requires a `--no-summary` option for the `entities-service upload` command
-      # This step should be dynamically generated based on the recently changed/added Entities
+          git diff --name-only ${SHA_BEFORE} | grep -E '^entities/.*\.json$' > entities.txt
+
+          echo "Relevant Entities:"
+          cat entities.txt
+
+      - name: Validate Entities
+        run: cat entities.txt | entities-service validate --format=json -
+
       - name: Upload Entities
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: entities-service upload --no-summary --format=json -d entities/microstructure -d entities/performance -d entities/properties
+        run: cat entities.txt | entities-service upload --auto-confirm --format=json -
         env:
           ENTITIES_SERVICE_ACCESS_TOKEN: ${{ secrets.ENTITIES_SERVICE_ACCESS_TOKEN }}

@@ -1,1 +1,1 @@
-entities-service[cli] @ git+https://github.com/SINTEF/entities-service.git@v0.3.0
+entities-service[cli] @ git+https://github.com/SINTEF/entities-service.git@v0.5.0
