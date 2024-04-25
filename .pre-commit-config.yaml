@@ -50,3 +50,11 @@ repos:
       args:
       - --docs-folder=docs
       - --replacement=(LICENSE),(LICENSE.md)
+
+  - repo: https://github.com/SINTEF/entities-service
+    rev: v0.4.0
+    hooks:
+    - id: validate-entities
+      additional_dependencies: [".[cli]"]
+      files: ^entities/.*\.json$
+      verbose: true

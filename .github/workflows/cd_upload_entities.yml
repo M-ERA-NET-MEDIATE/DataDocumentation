@@ -43,10 +43,10 @@ jobs:
           cat entities.txt
 
       - name: Validate Entities
-        run: cat entities.txt | entities-service validate --format=json -
+        run: cat entities.txt | entities-service validate --strict --format=json -
 
       - name: Upload Entities
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: cat entities.txt | entities-service upload --auto-confirm --format=json -
+        run: cat entities.txt | entities-service upload --auto-confirm --strict --format=json -
         env:
           ENTITIES_SERVICE_ACCESS_TOKEN: ${{ secrets.ENTITIES_SERVICE_ACCESS_TOKEN }}
