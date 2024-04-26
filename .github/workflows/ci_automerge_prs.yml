@@ -15,7 +15,7 @@ jobs:
   automerge-automatic-prs:
     name: Auto-merge Dependabot PRs
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'M-ERA-NET-MEDIATE' && ( github.actor == 'dependabot[bot]' && github.event.pull_request.user.login == 'dependabot[bot]' ) || ( github.actor == 'pre-commit-ci[bot]' && github.event.pull_request.user.login == 'pre-commit-ci[bot]' )
+    if: github.repository_owner == 'M-ERA-NET-MEDIATE' && ( ( github.actor == 'dependabot[bot]' && github.event.pull_request.user.login == 'dependabot[bot]' ) || ( github.actor == 'pre-commit-ci[bot]' && github.event.pull_request.user.login == 'pre-commit-ci[bot]' ) )
 
     steps:
       - name: Enable auto-merge for automatically generated PRs

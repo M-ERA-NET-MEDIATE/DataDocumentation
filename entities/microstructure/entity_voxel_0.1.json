@@ -1,7 +1,7 @@
 {
     "name": "VoxelImage",
     "version": "0.1",
-    "namespace": "http://onto-ns.com/meta",
+    "namespace": "http://onto-ns.com/meta/mediate",
     "description": "A voxel image",
     "dimensions": {
         "nx": "Number of voxel in x direction.",

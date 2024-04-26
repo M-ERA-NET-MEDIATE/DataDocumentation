@@ -16,7 +16,7 @@ repos:
   # To get an overview of them all as well as the ones used here, please see
   # https://github.com/pre-commit/pre-commit-hooks#hooks-available
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
     - id: end-of-file-fixer
     - id: check-yaml
@@ -30,7 +30,7 @@ repos:
   # More information can be found in its source repository:
   # https://github.com/DavidAnson/markdownlint-cli2
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.12.1
+    rev: v0.13.0
     hooks:
     - id: markdownlint-cli2
       name: markdownlint
@@ -44,9 +44,19 @@ repos:
   # More information can be found in its documentation:
   # https://SINTEF.github.io/ci-cd/
   - repo: https://github.com/SINTEF/ci-cd
-    rev: v2.7.2
+    rev: v2.7.4
     hooks:
     - id: docs-landing-page
       args:
       - --docs-folder=docs
       - --replacement=(LICENSE),(LICENSE.md)
+
+  # entities-service can validate SOFT/DLite entities
+  # More information can be found in the repository README:
+  # https://github.com/SINTEF/entities-service?tab=readme-ov-file#readme
+  - repo: https://github.com/SINTEF/entities-service
+    rev: v0.5.0
+    hooks:
+    - id: validate-entities
+      additional_dependencies: [".[cli]"]
+      files: ^entities/.*\.json$
