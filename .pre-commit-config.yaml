@@ -51,6 +51,9 @@ repos:
       - --docs-folder=docs
       - --replacement=(LICENSE),(LICENSE.md)
 
+  # entities-service can validate SOFT/DLite entities
+  # More information can be found in the repository README:
+  # https://github.com/SINTEF/entities-service?tab=readme-ov-file#readme
   - repo: https://github.com/SINTEF/entities-service
     rev: v0.5.0
     hooks:
