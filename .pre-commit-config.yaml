@@ -60,4 +60,3 @@ repos:
     - id: validate-entities
       additional_dependencies: [".[cli]"]
       files: ^entities/.*\.json$
-      verbose: true
