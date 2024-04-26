@@ -33,7 +33,13 @@ jobs:
 
       - name: Gather Entities
         run: |
-          git diff --name-only ${{ github.event.before }} | grep -E '^entities/.*\.json$' > entities.txt ||:
+          if [ "${{ github.event_name }}" == "push" ]; then
+            SHA_BEFORE="${{ github.event.before }}"
+          else
+            SHA_BEFORE="${{ github.event.pull_request.base.sha }}"
+          fi
+
+          git diff --name-only ${SHA_BEFORE} | grep -E '^entities/.*\.json$' > entities.txt ||:
 
           if [ -s entities.txt ]; then
             echo "RELEVANT_ENTITIES=true" >> $GITHUB_ENV
