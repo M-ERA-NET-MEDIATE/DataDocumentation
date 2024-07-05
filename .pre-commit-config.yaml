@@ -39,18 +39,6 @@ repos:
       - --fix
       - --config=.markdownlint.yaml
 
-  # ci-cd is a collection of hooks to prepare for CI/CD workflows
-  # It's mainly related to documentation
-  # More information can be found in its documentation:
-  # https://SINTEF.github.io/ci-cd/
-  - repo: https://github.com/SINTEF/ci-cd
-    rev: v2.7.4
-    hooks:
-    - id: docs-landing-page
-      args:
-      - --docs-folder=docs
-      - --replacement=(LICENSE),(LICENSE.md)
-
   # entities-service can validate SOFT/DLite entities
   # More information can be found in the repository README:
   # https://github.com/SINTEF/entities-service?tab=readme-ov-file#readme

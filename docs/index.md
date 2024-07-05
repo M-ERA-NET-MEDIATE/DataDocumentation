@@ -1,26 +1,27 @@
-# Data Documentation for the MEDIATE project
+---
+myst:
+  html_meta:
+    "description lang=en": |
+      Top-level documentation for SOFT7, with links to the rest of the site.
+html_theme.sidebar_secondary.remove: true
+---
 
-## Purpose
+<!-- markdownlint-disable MD041 -->
 
-To retain the data documentation, data models (entities) for all data that will be generated in the project.
-It should represent all the input, output for all the functions made available.
+```{toctree}
+:maxdepth: 2
+:hidden:
 
-## Content
+entity_contribution
+developers
+license
+```
 
-### Data models
+```{include} ../README.md
+:relative-docs: docs/
+:relative-images:
+```
 
-The data models are described in JSON files in the entities folder.
+## Workflow diagrams
 
-### Documentation
-
-How to use the data models.
-How to maintain the data models and the repository.
-How the deployment to onto-ns server system works.
-
-## License
-
-This code is licensed under the [CC0 license](LICENSE.md).
-
-## Acknowledgments
-
-M-ERA.NET MEDIATE
+![Workflow diagrams](_static/workflow_diagrams.svg)
